@@ -1,0 +1,86 @@
+:root {
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  background: var(--color-light-gray);
+  color: var(--color-transparent-white);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  height: 100vh;
+}
+
+.preview-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.preview-card section {
+  padding: 42px;
+  max-width: 220px;
+}
+
+.preview-card section p {
+  line-height: 1.7em;
+  margin-bottom: 100px;
+}
+
+.preview-card a {
+  background-color: var(--color-light-gray);
+  padding: 16px 28px;
+  border-radius: 24px;
+  text-decoration: none;
+}
+
+.preview-card section a:hover {
+    color: var(--color-light-gray);
+    background-color: transparent;
+    outline: var(--color-light-gray) 2px solid;
+}
+
+.preview-card > :nth-child(1) {
+  background-color: var(--color-bright-orange);
+  border-radius: 8px 0 0 8px;
+}
+
+.preview-card > :nth-child(1) a {
+  color: var(--color-bright-orange);
+}
+
+.preview-card > :nth-child(2) {
+  background-color: var(--color-dark-cyan);
+}
+
+.preview-card > :nth-child(2) a {
+  color: var(--color-dark-cyan);
+}
+
+.preview-card > :nth-child(3) {
+  background-color: var(--color-very-dark-cyan);
+  border-radius: 0 8px 8px 0;
+}
+
+.preview-card > :nth-child(3) a {
+  color: var(--color-very-dark-cyan);
+}
+
+.preview-card h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  color: var(--color-light-gray);
+  font-size: 2.8em;
+  font-weight: 700;
+}
