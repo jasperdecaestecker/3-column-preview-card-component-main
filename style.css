@@ -23,6 +23,39 @@ body {
   height: 100vh;
 }
 
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container .preview-card section {
+    padding: 42px 32px;
+  }
+
+  .container .preview-card section p {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: auto;
+    max-width: 95%;
+  }
+
+  .container .preview-card {
+    grid-template-columns: 1fr;
+  }
+
+  .container .preview-card > :nth-child(1) {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .container .preview-card > :nth-child(3) {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
 .preview-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -46,9 +79,9 @@ body {
 }
 
 .preview-card section a:hover {
-    color: var(--color-light-gray);
-    background-color: transparent;
-    outline: var(--color-light-gray) 2px solid;
+  color: var(--color-light-gray);
+  background-color: transparent;
+  outline: var(--color-light-gray) 2px solid;
 }
 
 .preview-card > :nth-child(1) {
