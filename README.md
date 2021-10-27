@@ -6,9 +6,9 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 I kept things simple and only use basic css and html. I mainly used css Grid to align the card.
 
-Feedback? [Feedback page](https://www.frontendmentor.io/solutions/stats-preview-card-component-with-pure-css-flexbox-grid-KlYlzhqBs)
+Feedback? [Feedback page](https://www.frontendmentor.io/solutions/3-column-preview-card-using-css-grid-no-framework-W-VcayHwL)
 
-[Live Page - Netlify](https://reverent-dijkstra-6d12f9.netlify.app/)
+[Live Page - Netlify](https://eloquent-murdock-177b6d.netlify.app/)
 
 ## Useful resources
 
